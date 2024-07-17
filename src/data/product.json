@@ -1,0 +1,49 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "title": "bloodborne",
+            "code": "48418",
+            "description": "Enfrenta a tus pesadillas",
+            "price": 100.25,
+            "status": true,
+            "stock": 30
+        },
+        {
+            "id": "2",
+            "title": "GRAND THEFT AUTO",
+            "code": "78684",
+            "description": "Los santos, la ciudad del pecado",
+            "price": 124,
+            "status": true,
+            "stock": 58
+        },
+        {
+            "id": "3",
+            "title": "Dark souls II",
+            "code": "59247",
+            "description": "Preparate para morir",
+            "price": 210.25,
+            "status": true,
+            "stock": 10
+        },
+        {
+            "id": "4",
+            "title": "the last of us 1",
+            "code": "2345",
+            "description": "Perdura y sobrevive",
+            "price": 285.5,
+            "status": true,
+            "stock": 65
+        },
+        {
+            "id": "5",
+            "title": "Driveclub",
+            "code": "6225",
+            "description": "Arranquen los motores velocistas!",
+            "price": 102.1,
+            "status": true,
+            "stock": 20
+        }
+    ]
+}

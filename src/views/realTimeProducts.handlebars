@@ -1,0 +1,13 @@
+<h1 class="h1-neon">Productos en Tiempo Real</h1> 
+ <ul id="productList">
+  {{#each products}}
+    <li class="li-colores">{{this}} <button class="delete" data-index="{{@index}}">Eliminar</button></li>
+  {{/each}}
+</ul>
+<form action="/products" method="POST">
+  <input   type="text" name="product" placeholder="Nuevo producto" required>
+  <button class="btn-btn-neon"type="submit">Agregar</button>
+</form>
+<a href="/">----------> Ir a la lista de productos!!</a>
+<body class="body-productos">
+</body>
