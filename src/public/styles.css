@@ -2,11 +2,14 @@
 
 
     body {
-        height: 100vh;
-        background-image: url("./img/gtavc_anniversary_CandySuxx_2880x1800.jpg");
-        background-size: 1935px;
-        background-repeat: no-repeat;
-        font-family: consolas;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-image: url('./img/gtavc_anniversary_CandySuxx_2880x1800.jpg'); 
+        background-repeat: repeat; 
+        background-position: top left; 
+        background-attachment: fixed; 
+        background-size: 1935px; 
     }
 
     ol {
@@ -54,9 +57,25 @@ margin-top: auto;
         align-items: center;
     }
 
+    label{
+        font-size: 2rem;
+        font-family: "Honk", system-ui;
+    }
+
+    .input{
+        font-size: 35px;
+    }
+
+    span{
+        font-size: 2rem;
+        height: 250px;
+        font-family: "Honk", system-ui;
+    }
+
 
     h2 {
         margin-bottom: 20px;
+        font-family: "Honk", system-ui;
     }
 
     #productList {
@@ -92,6 +111,12 @@ margin-top: auto;
         align-items: center;
         font-family: "Honk", system-ui;
         text-decoration: none;
+    }
+
+    .a-a:hover{
+        background: #a945c7;
+        box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+        transition-delay: 0.1s;
     }
 
     p {
@@ -235,4 +260,14 @@ margin-top: auto;
 
     ul{
         margin-top: auto;
+    }
+
+
+
+
+    .card{
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }

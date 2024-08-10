@@ -1,0 +1,20 @@
+<h1 class="text-center py-4 text-2xl text-neutral-800 font-bold">Game chat</h1>
+<a href="/">Salida</a>
+<div class="p-6 flex flex-col w-1/5">
+    <label for="message-user">Comienza a hablar!!</label>
+    <button id="clear-chat">Borrar Chat</button>
+    <input id="message-user" class="input" type="text" />
+</div>
+<div id="container-chats" class="flex flex-col mx-6 w-2/3 gap-y-4">
+    <span id="user-name" class="text-xl text-gray-800 text-neutral-800"></span>
+    <h2 class="text-xl text-gray-400 font-bold">Chatea</h2>
+    {{#each messagesContainer}}
+        <div class="flex">
+            <span class="text-sm font-bold text-neutral-800">{{user}}:</span> 
+            <span class="text-sm text-black">{{message}}</span>
+        </div>  
+    {{/each}}
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/chat.js"></script>
