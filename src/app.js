@@ -85,16 +85,70 @@ app.get('/checkout', (req, res) =>{
   res.render('checkout')
 })
 
+
+
 app.get('/cart', (req, res) =>{
   res.render('carrito', { products, Id})
 })
 
-app.get('/item/:pid', (req, res) =>{
+app.get('/item/1', (req, res) =>{
   const pid = req.params.pid;
   const productData = getProductData(pid);
   res.render('productoPorId', {  products, Id })
 })
+app.get('/item/2', (req, res) =>{
+  const pid = req.params.pid;
+  const productData = getProductData(pid);
+  res.render('productoPorId-2', {  products, Id })
+})
 
+app.get('/item/3', (req, res) =>{
+  const pid = req.params.pid;
+  const productData = getProductData(pid);
+  res.render('productoPorId-3', {  products, Id })
+})
+
+app.get('/item/4', (req, res) =>{
+  const pid = req.params.pid;
+  const productData = getProductData(pid);
+  res.render('productoPorId-4', {  products, Id })
+})
+
+app.get('/item/5', (req, res) =>{
+  const pid = req.params.pid;
+  const productData = getProductData(pid);
+  res.render('productoPorId-5', {  products, Id })
+})
+
+app.get('/item/6', (req, res) =>{
+  const pid = req.params.pid;
+  const productData = getProductData(pid);
+  res.render('productoPorId-6', {  products, Id })
+})
+
+app.get('/item/7', (req, res) =>{
+  const pid = req.params.pid;
+  const productData = getProductData(pid);
+  res.render('productoPorId-7', {  products, Id })
+})
+
+app.get('/item/8', (req, res) =>{
+  const pid = req.params.pid;
+  const productData = getProductData(pid);
+  res.render('productoPorId-8', {  products, Id })
+})
+
+app.get('/item/9', (req, res) =>{
+  const pid = req.params.pid;
+  const productData = getProductData(pid);
+  res.render('productoPorId-9', {  products, Id })
+})
+
+app.get('/item/10', (req, res) =>{
+  const pid = req.params.pid;
+  const productData = getProductData(pid);
+  res.render('productoPorId-10', {  products, Id })
+})
 
 app.get('/realtimeproducts', (req, res) => {
   res.render('realTimeProducts', { products });

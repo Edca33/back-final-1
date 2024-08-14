@@ -268,7 +268,7 @@ margin-top: auto;
             justify-content: space-around;  
         }
         
-        .card:hover {
+        .card:hover  {
             align-items: center;
             justify-content: center;
             transition: 1s;
@@ -278,3 +278,7 @@ margin-top: auto;
         }
         
 
+.card:hover{
+    cursor: help;
+    background-color: #8b0000;
+}
