@@ -24,17 +24,25 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true })); 
-let messages = [];
 let Id = [];
+function getProductData() {
+  // Define productData here
+  let productData = {};
+
+  // Use productData within the function
+}
+
 let products = [];
 mongoose.connect(
-  "mongodb+srv://doom660324:336699..@coderback.0bsn23o.mongodb.net/?retryWrites=true&w=majority&appName=coderback",
+  "mongodb+srv://doom660324:Blood669933ñbloodñññ@coderback.0bsn23o.mongodb.net/?retryWrites=true&w=majority&appName=coderback",
   { dbName: 'compras21' },
 )
 .then(() => console.log('Conectado a mongoDB'))
 app.get('/', (req, res) =>{
   res.render('home', { products });
 })
+
+
   
 
 app.get('/', async (req, res) => {
@@ -69,6 +77,10 @@ app.get('/chats', async (req, res) => {
   res.render('chats', { messagesContainer: [...results] })
 });
 
+app.get('/products', (req, res) =>{
+  res.render('products', { products })
+})
+
 app.get('/checkout', (req, res) =>{
   res.render('checkout')
 })
@@ -78,6 +90,8 @@ app.get('/cart', (req, res) =>{
 })
 
 app.get('/item/:pid', (req, res) =>{
+  const pid = req.params.pid;
+  const productData = getProductData(pid);
   res.render('productoPorId', {  products, Id })
 })
 

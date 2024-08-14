@@ -1,0 +1,120 @@
+
+
+<a href="/">Salir</a>
+
+
+<div class="card-container">
+    
+    <div class="card" style="width: 18rem;" data-pid="1" onclick="selectProduct(event)">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/814380/capsule_616x353.jpg?t=1721684463" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Sekiro Shadows Die Twice</h5>
+            <p class="card-text">1504</p>
+            <a href="/item/:pid"  class="btn btn-primary">Mirar Juego</a>
+        </div>
+    </div>
+
+
+
+    <div class="card" style="width: 18rem;">
+        <img src="https://s.yimg.com/ny/api/res/1.2/y97PuFydAPD3Ww787_Id7Q--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD03NzA-/https://o.aolcdn.com/hss/storage/midas/9750d914c6bd7f7c99ca0a962fd0336a/204374529/anniversary-29-ed.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">ps4</h5>
+            <p class="card-text">1504</p>
+            <a href="/item/:pid"  class="btn btn-primary">mirar producto</a>
+        </div>
+    </div>
+
+
+    <div class="card" style="width: 18rem;">
+        <img src="https://image.api.playstation.com/vulcan/img/rnd/202010/2614/NVmnBXze9ElHzU6SmykrJLIV.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">BloodBorne</h5>
+            <p class="card-text">1504</p>
+            <a href="/item/:pid"  class="btn btn-primary">mirar juego</a>
+        </div>
+    </div>
+
+        <div class="card" style="width: 18rem;">
+        <img src="https://i.blogs.es/f2b4ae/logo-rockstar/500_333.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">rockstar</h5>
+            <p class="card-text">1504</p>
+            <a href="/item/:pid"  class="btn btn-primary">mirar producto</a>
+        </div>
+    </div>
+
+
+
+    <div class="card" style="width: 18rem;">
+        <img src="https://generacionxbox.com/wp-content/uploads/2016/11/Resident-Evil-7-biohazard-generacion-xbox.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Resident Evil 7 Biohazard</h5>
+            <p class="card-text">1504</p>
+            <a href="/item/:pid"  class="btn btn-primary">mirar producto</a>
+        </div>
+    </div>
+
+
+    <div class="card" style="width: 18rem;">
+        <img src="https://i.ytimg.com/vi/fo2pvTi-sW8/hq720_live.jpg?sqp=CND87bUG-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCdBf1GNhTaZjItqPRNOWHj2GWY7w" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">The evil within 2</h5>
+            <p class="card-text">1504</p>
+            <a href="/item/:pid"  class="btn btn-primary">Mirar juego</a>
+        </div>
+    </div>
+
+        <div class="card" style="width: 18rem;">
+        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202010/0204/oHjfzFXZ9EbPz8xizk2r3epu.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">The Evil within</h5>
+            <p class="card-text">1504</p>
+            <a href="/item/:pid"  class="btn btn-primary">mirar producto</a>
+        </div>
+    </div>
+
+
+
+    <div class="card" style="width: 18rem;">
+        <img src="https://martinbrainon.com/inicio/wp-content/uploads/2018/01/lead-nuclear-power-human-error-homer-simpson-1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">homer</h5>
+            <p class="card-text">1504</p>
+            <a href="/item/:pid"  class="btn btn-primary">mirar producto</a>
+        </div>
+    </div>
+
+
+    <div class="card" style="width: 18rem;">
+        <img src="https://i.ytimg.com/vi/P20ASB1MdnI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA1w5mrSTDxzKFw_3zlg98Er6VmrA" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Grand Theft Auto V</h5>
+            <p class="card-text">1504</p>
+            <a href="/item/:pid"  class="btn btn-primary">mirar producto</a>
+        </div>
+    </div>
+
+        <div class="card" style="width: 18rem;">
+        <img src="https://live.mrf.io/statics/i/ps/www.muycomputer.com/wp-content/uploads/2016/12/MensajesErrorWindows.jpg?width=1200&enable=upscale" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">error</h5>
+            <p class="card-text">1504</p>
+            <a href="/item/:pid"  class="btn btn-primary">mirar producto</a>
+        </div>
+    </div>
+
+</div>
+
+<script>
+const lookProductButtons = document.querySelectorAll('.card');
+
+lookProductButtons.forEach((button) => {
+  button.addEventListener('click', (event) => {
+    const pid = event.target.dataset.pid;
+    const url = `/item/${pid}`;
+    window.location.href = url;
+  });
+});
+
+</script>

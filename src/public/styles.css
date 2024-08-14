@@ -262,12 +262,19 @@ margin-top: auto;
         margin-top: auto;
     }
 
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;  
+        }
+        
+        .card:hover {
+            align-items: center;
+            justify-content: center;
+            transition: 1s;
+            flex: 1 1 300px; 
+            max-width: 350px; 
+            margin: 35px
+        }
+        
 
-
-
-    .card{
-        margin-bottom: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
