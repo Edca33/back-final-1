@@ -90,11 +90,18 @@ app.get('/checkout', (req, res) =>{
 app.get('/cart', (req, res) =>{
   res.render('carrito', { products, Id})
 })
+app.get('/producto', (req, res) =>{
+  const pid = req.params.pid;
+  const productData = getProductData(pid);
+  res.render('productoPorId', {  products, Id })
+})
+
+
 
 app.get('/item/1', (req, res) =>{
   const pid = req.params.pid;
   const productData = getProductData(pid);
-  res.render('productoPorId', {  products, Id })
+  res.render('productoPorId-1', {  products, Id })
 })
 app.get('/item/2', (req, res) =>{
   const pid = req.params.pid;
